@@ -10,7 +10,7 @@ bool RingBuffer_Init(RingBuffer *ringBuffer, char *dataBuffer, size_t dataBuffer
 	assert(dataBufferSize > 0);
 	
 	if ((ringBuffer) && (dataBuffer) && (dataBufferSize > 0)) {
-	  //TODO
+	  
 	  ringBuffer->head=0;
 	  ringBuffer->tail=0;
 	  ringBuffer->length=0;
@@ -27,7 +27,7 @@ bool RingBuffer_Clear(RingBuffer *ringBuffer)
 	assert(ringBuffer);
 	
 	if (ringBuffer) {
-		//TODO
+		
 		for(uint16_t i=0; i<ringBuffer->size;i++){
 		    ringBuffer->data[i]=0;
 		}
@@ -42,7 +42,7 @@ bool RingBuffer_Clear(RingBuffer *ringBuffer)
 bool RingBuffer_IsEmpty(const RingBuffer *ringBuffer)
 {
   assert(ringBuffer);	
-	//TODO
+	
 	if(ringBuffer->length!=0){
 	    return false;
 	}
@@ -55,7 +55,7 @@ size_t RingBuffer_GetLen(const RingBuffer *ringBuffer)
 	assert(ringBuffer);
 	
 	if (ringBuffer) {
-		// TODO
+		
 		return ringBuffer->length;
 	}
 	return 0;
@@ -67,7 +67,7 @@ size_t RingBuffer_GetCapacity(const RingBuffer *ringBuffer)
 	assert(ringBuffer);
 	
 	if (ringBuffer) {
-		// TODO
+		
 		return ringBuffer->size;
 	}
 	return 0;	
@@ -79,7 +79,7 @@ bool RingBuffer_PutChar(RingBuffer *ringBuffer, char c)
 	assert(ringBuffer);
 	
 	if (ringBuffer) {
-		//TODO
+		
 		if(ringBuffer->size==ringBuffer->length){
 		    return false;
 		}
@@ -102,7 +102,7 @@ bool RingBuffer_GetChar(RingBuffer *ringBuffer, char *c)
 	assert(c);
 	
   if ((ringBuffer) && (c)) {
-		//TODO
+		
 		if(ringBuffer->length==0){
 		    return false;
 		}
