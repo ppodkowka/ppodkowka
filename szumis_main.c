@@ -1,6 +1,6 @@
 /*  Project "Mis Szumis"
 		Laboratorium TMP 2, EIT rok 3
-		Realisation: Piotr Podkówka, Kacper Czepiec
+		Realisation: Piotr PodkÃ³wka, Kacper Czepiec
 */
 
 
